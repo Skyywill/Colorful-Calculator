@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+  <section class = "calculationContainer" id = "calculationContainer">
+
+    <!-- section for the background color selection -->
+
+    <div class="navigationContainer">
+      <div class="navigationBar">
+        <a style = "background: #ff0004" onclick="backgroundColor('calculationContainer', '#ff0004')">Red</a>
+        <a style = "background: #ffff00" onclick="backgroundColor('calculationContainer', '#ffff00')">Yellow</a>
+        <a style = "background: #ff6600" onclick="backgroundColor('calculationContainer', '#ff6600')">Orange</a>
+        <a style = "background: #00ff00" onclick="backgroundColor('calculationContainer', '#00ff00')">Green</a>
+        <a style = "background: #00ffff" onclick="backgroundColor('calculationContainer', '#00ffff')">Blue</a>
+        <a style = "background: #6600cc" onclick="backgroundColor('calculationContainer', '#6600cc')">Indigo</a>
+        <a style = "background: #cc0099" onclick="backgroundColor('calculationContainer', '#cc0099')">Violet</a>
+      </div>
+    </div>
+    <table>
+
+      <!-- Calculator display box -->
+
+      <tr>
+        <td>
+          <label for="input"></label><input style="color: white" type="text" id="input" placeholder=" 0 " readonly="readonly">
+        </td>
+      </tr>
+
+      <!-- Calculator selection button -->
+
+      <tr>
+        <td>
+          <input type="button"
+                value="Clear"
+                onclick="clearScreen()"
+                style="width: 198px; color: white; background: darkslategray; margin-top: 0">
+
+          <input type="button"
+                 value="/"
+                 onclick="getOperand('/')"
+                 style="background: darkslategray; margin-top: 0">
+
+          <br>
+
+          <input type="button"
+                 value="7"
+                 onclick="getNumber(7)">
+          <input type="button"
+                 value="8"
+                 onclick="getNumber(8)">
+          <input type="button"
+                 value="9"
+                 onclick="getNumber(9)">
+          <input type="button"
+                 value="x"
+                 onclick="getOperand('x')"
+                 style= "background: darkslategray;">
+
+          <br>
+
+          <input type="button"
+                 value="4"
+                 onclick="getNumber(4)">
+          <input type="button"
+                 value="5"
+                 onclick="getNumber(5)">
+          <input type="button"
+                 value="6"
+                 onclick="getNumber(6)">
+          <input type="button"
+                 value="-"
+                 onclick="getOperand('-')"
+                 style= "background: darkslategray;">
+
+          <br>
+
+          <input type="button"
+                 value="1"
+                 onclick="getNumber(1)">
+          <input type="button"
+                 value="2"
+                 onclick="getNumber(2)">
+          <input type="button"
+                 value="3"
+                 onclick="getNumber(3)">
+          <input type="button"
+                 value="+"
+                 onclick="getOperand('+')"
+                 style= "background: darkslategray;">
+
+          <br>
+
+          <input type="button"
+                 value="0"
+                 onclick="getNumber(0)">
+          <input type="button"
+                 value="."
+                 onclick="getNumber('.')">
+          <input type="button"
+                 value="="
+                 onclick="compute()">
+          <input type="button"
+                 value="%"
+                 onclick="getOperand('%')"
+                 style= "background: darkslategray;">
+
+          <br>
+
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  </body>
+</html>
