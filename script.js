@@ -103,7 +103,7 @@ function trigger() {
   let input_var = document.getElementById('input');
   if (input_var.value.length === 15) {
     document.getElementById("calculationContainer").classList.add('apply-shake');
-    setTimeout( function() {alert('Sorry, No more space for new input'); } , 500)
+    setTimeout( function() {alert('Sorry, No more space for new input, ask William to make changes'); } , 500)
 
   } else {
 
